@@ -28,7 +28,7 @@ class InventoryMapping:
     # Req 5.1
     def check_ingredients(self, recipe: Recipe, consume: bool = False):
         for ingredient_name, amount_required in recipe.items():
-            inventory_amount = self.inventory[ingredient_name]
+            inventory_amount = self.inventory.get(ingredient_name, 0)
             if amount_required > inventory_amount:
                 if consume:
                     raise ValueError

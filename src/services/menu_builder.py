@@ -29,11 +29,11 @@ class MenuBuilder:
         menu = list()
         print_dish = dict()
         dishes = self.menu_data.dishes
-        inventory = set(self.inventory.inventory.keys())
         for dish in dishes:
-            ingredients = dish.get_ingredients()
-            restrictions = dish.get_restrictions()
-            if ingredients <= inventory:
+            isAvaliable = self.inventory.check_recipe_availability(dish.recipe)
+            if isAvaliable:
+                ingredients = dish.get_ingredients()
+                restrictions = dish.get_restrictions()
                 if restriction not in restrictions:
                     print_dish = {}
                     print_dish["dish_name"] = dish.name
