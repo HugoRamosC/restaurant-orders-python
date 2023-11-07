@@ -6,7 +6,7 @@
 
 Foi finalizada uma ferramenta de construção de cardápios de restaurante desenvolvida em Python com leitura de arquivo csv. A ferramenta gera cardápios considerando possíveis restrições alimentares e também a disponibilidade dos ingredientes em estoque.
 
-O projeto iniciou já com uma estrutura inicial eu fui responsável por construir testes para classes já implementadas, implementar uma nova classe para mapear os pratos e suas respectivas receitas (ingredientes e quantidades), também implementar uma classe que gera os cardápios que devem ser mostrados para as pessoas que frequentam o estabelecimento e outra que faz a gestão de estoque dos ingredientes.
+O projeto iniciou já com uma estrutura pronta e eu fui responsável por construir testes para classes já implementadas, implementar uma nova classe para mapear os pratos e suas respectivas receitas (ingredientes e quantidades), também implementar uma classe que gera os cardápios que devem ser mostrados para as pessoas que frequentam o estabelecimento e outra que faz a gestão de estoque dos ingredientes.
 
 ### Tecnologias utilizadas:
 
